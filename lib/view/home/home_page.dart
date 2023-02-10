@@ -66,6 +66,14 @@ class HomePage extends StatelessWidget {
                                                 color: Colors.white,
                                                 fontSize: 35),
                                           ),
+                                          const SizedBox(
+                                            width: 5,
+                                          ),
+                                          const Icon(
+                                            Icons.arrow_drop_down_outlined,
+                                            color: Colors.white,
+                                            size: 24,
+                                          ),
                                         ],
                                       ),
                                     ),
