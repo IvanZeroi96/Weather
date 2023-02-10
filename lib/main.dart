@@ -14,8 +14,12 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return GetMaterialApp(
       title: 'Fever',
+      debugShowCheckedModeBanner: false,
       theme: ThemeData(
         primarySwatch: Colors.blue,
+        iconTheme: const IconThemeData(
+          color: Colors.white,
+        ),
       ),
       initialRoute: '/',
       getPages: routes,
