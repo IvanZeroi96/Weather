@@ -19,6 +19,7 @@ class HomeController extends GetxController {
   String _lluvia = '0';
   String _viento = '0';
   String _humedad = '0';
+  String _selectCityTitle = '';
   List<Citys> _citys = [];
   Climate? _climate;
   bool _isLoading = true;
@@ -85,7 +86,7 @@ class HomeController extends GetxController {
   void getCitySelect() async {
     Get.dialog(
       SimpleDialog(
-        title: const Text('Selecciona una ciudad'),
+        title: Text(_selectCityTitle),
         children: _buildOptions(),
       ),
     );
@@ -112,5 +113,6 @@ class HomeController extends GetxController {
 
   void _initialLabel() {
     String a = Localizationes.of(Get.context!)!.today;
+    _selectCityTitle = Localizationes.of(Get.context!)!.selectCityTitle;
   }
 }

@@ -15,14 +15,20 @@ class Localizationes {
   static final Map<String, Map<String, String>> _localizedValues = {
     'en': {
       'Today': 'Today',
+      'SelectCityTitle': 'Select a city',
     },
     'es': {
       'Today': 'Hoy',
+      'SelectCityTitle': 'Selecciona una ciudad',
     },
   };
 
   String get today {
     return _localizedValues[locale.languageCode]!['Today'] ?? '';
+  }
+
+  String get selectCityTitle {
+    return _localizedValues[locale.languageCode]!['SelectCityTitle'] ?? '';
   }
 }
 
