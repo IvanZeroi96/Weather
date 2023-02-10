@@ -2,6 +2,7 @@ import 'package:fever/model/citys/citys.dart';
 import 'package:fever/model/climate.dart';
 import 'package:fever/model/common.dart';
 import 'package:fever/model/constants.dart';
+import 'package:fever/model/l10n/l10n.dart';
 import 'package:fever/model/network/network.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
@@ -35,6 +36,7 @@ class HomeController extends GetxController {
   @override
   void onInit() {
     // TODO: implement onInit
+    _initialLabel();
     _getCitys();
     super.onInit();
   }
@@ -106,5 +108,9 @@ class HomeController extends GetxController {
       ));
     }
     return list;
+  }
+
+  void _initialLabel() {
+    String a = Localizationes.of(Get.context!)!.today;
   }
 }
