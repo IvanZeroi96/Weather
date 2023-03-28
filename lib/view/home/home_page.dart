@@ -118,7 +118,7 @@ class HomePage extends StatelessWidget {
                                     Text(
                                       _.grados,
                                       style: const TextStyle().copyWith(
-                                          color: Colors.white, fontSize: 100),
+                                          color: Colors.white, fontSize: 80),
                                     ),
                                   ],
                                 ),
