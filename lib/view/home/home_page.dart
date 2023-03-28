@@ -1,5 +1,4 @@
 import 'package:fever/controller/home/home_controller.dart';
-import 'package:fever/model/ui/f_card.dart';
 import 'package:fever/model/ui/f_progress_hud.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
@@ -180,14 +179,6 @@ class HomePage extends StatelessWidget {
                                 ),
                                 const SizedBox(
                                   height: 40,
-                                ),
-                                SizedBox(
-                                  height: 130,
-                                  child: ListView.builder(
-                                      scrollDirection: Axis.horizontal,
-                                      itemBuilder: (context, index) {
-                                        return const FCard();
-                                      }),
                                 ),
                               ],
                             ),
